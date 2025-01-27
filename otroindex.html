@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const edad = 19;
+        let mensaje;
+
+        if (edad > 18){
+           mensaje = "Eres mayor de edad";
+        }
+        else if (edad == 18){
+            mensaje = "Tienes la edad justa";
+        }
+        else {
+            mensaje = "Eres menor";
+        }
+
+        document.getElementById('demo').innerHTML = mensaje;
+    </script>
+</body>
+</html>
