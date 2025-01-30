@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let x = 111;
+
+      if (x % 2) {
+        mensaje = "El numero es multiplo de dos";
+      } else if (x % 3) {
+        mensaje = "El numero es multiplo de tres";
+      } else if ((x % 2, 3)) {
+        mensaje = "El numero es multiplo de ambos";
+      } else {
+        mensaje = "El numero no es multiplo de dos ni tres";
+      }
+      document.getElementById("demo").innerHTML = mensaje;
+    </script>
+  </body>
+</html>
