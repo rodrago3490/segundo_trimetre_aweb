@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let nombre = "Smith";
+      let respuesta;
+      switch (nombre) {
+        case "Juan":
+          mensaje = "Hola Juan";
+          break;
+
+        case "Berta":
+          mensaje = "Tu nombre es Berta";
+          break;
+
+        case "Smith":
+          mensaje = "Tu nombre es Smith";
+          break;
+
+        default:
+          mensaje = "No eres de esta clase";
+      }
+
+      document.getElementById("demo").innerHTML = mensaje;
+    </script>
+  </body>
+</html>

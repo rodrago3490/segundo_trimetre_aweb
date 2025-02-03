@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let x = 6;
+
+      par = ""; //Si no se pone sale undefined
+      if (x % 2 == 0) {
+        par = "El numero es par, ";
+      }
+
+      cinco = ""; //Si no se pone sale undefined
+      if (x % 5 == 0) {
+        cinco = "el numero es multiplo 5, ";
+      }
+
+      tres = ""; //Si no se pone sale undefined
+      if (x % 3 == 0) {
+        tres = "el numero es multiplo de 3";
+      }
+
+      mensaje = par + tres + cinco;
+      document.getElementById("demo").innerHTML = mensaje;
+    </script>
+  </body>
+</html>
