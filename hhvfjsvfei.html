@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let n = 5;
+      let factorial = 120;
+      for (let i = 1; n <= factorial; i++) {
+        if (n * i === factorial) {
+          factorial.push(i);
+        }
+      }
+
+      document.getElementById("demo").innerHTML = factorial;
+    </script>
+  </body>
+</html>
