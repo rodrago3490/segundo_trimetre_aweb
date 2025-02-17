@@ -1,0 +1,24 @@
+<!-- Cuenta atras con bucle while -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let segundos = 10;
+      let texto = "";
+
+      while (segundos >= 0) {
+        texto += segundos + "<br>";
+        segundos--;
+      }
+
+      document.getElementById("demo").innerHTML = texto;
+    </script>
+  </body>
+</html>
