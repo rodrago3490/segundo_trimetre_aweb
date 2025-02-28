@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let tareas = prompt("Introduce las tareas separadas por comas");
+      tarea = tareas.split(",");
+
+      let lista = "<ul>";
+      for (let i = 0; i < tarea.length; i++) {
+        lista += "<li>" + tarea[i] + "</li>";
+      }
+      lista += "</ul>";
+
+      document.getElementById("demo").innerHTML = lista;
+    </script>
+  </body>
+</html>
